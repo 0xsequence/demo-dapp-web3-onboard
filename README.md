@@ -1,7 +1,7 @@
-Demo Dapp + Web3Modal
+Demo Dapp + Web3-Onboard
 =====================
 
-Dapp example on how to use Sequence Wallet with [Web3Modal](https://github.com/Web3Modal/web3modal). Demonstrates how to connect a wallet, sign messages and send transactions.
+Dapp example on how to use Sequence Wallet with [Web3-Onboard](https://docs.blocknative.com/onboard). Demonstrates how to connect a wallet, sign messages and send transactions.
 
 Try this dapp at: [https://0xsequence.github.io/demo-dapp-web3-onboard](https://0xsequence.github.io/demo-dapp-web3-onboard)
 
