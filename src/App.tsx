@@ -122,8 +122,7 @@ const App = () => {
 
   const disconnectWallet = async () => {
     if (provider && (provider as any).sequence) {
-      const wallet = (provider as any).sequence as sequence.Wallet
-      wallet.disconnect()
+      onboard.disconnectWallet({ label: "disconnect" })
     }
 
     setProvider(null)
