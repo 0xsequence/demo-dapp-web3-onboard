@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 import Onboard from '@web3-onboard/core'
 import { Chain } from '@web3-onboard/common'
+import injectedModule from '@web3-onboard/injected-wallets'
 import sequenceModule from '@web3-onboard/sequence'
+import walletConnectModule from '@web3-onboard/walletconnect'
 
 import { ethers } from 'ethers'
 import { sequence } from '0xsequence'
@@ -23,19 +25,22 @@ const App = () => {
 
   const sequenceOnboard = sequenceModule()
 
-  // const injected = injectedModule({
-  //   custom: [
-  //     // include custom injected wallet modules here
-  //   ],
-  //   filter: {
-  //     // mapping of wallet label to filter here
-  //   }
-  // })
+  const injected = injectedModule({
+    custom: [
+      // include custom injected wallet modules here
+    ],
+    filter: {
+      // mapping of wallet label to filter here
+    }
+  })
+
+  const walletConnect = walletConnectModule()
 
   const onboard = Onboard({
     wallets: [
-      // injected,
-      sequenceOnboard
+      injected,
+      sequenceOnboard,
+      walletConnect
     ],
     chains: [
       {
