@@ -51,22 +51,6 @@ const App = () => {
         rpcUrl: 'https://matic-mainnet.chainstacklabs.com'
       },
     ] as Chain[],
-    appMetadata: {
-      name: 'web3-onboard-demo',
-      icon: '/favicon.png',
-      logo: '/favicon.png',
-      description: 'Demo app for Onboard',
-      recommendedInjectedWallets: [
-        { name: 'Sequence', url: 'https://sequence.xyz' },
-      ],
-      agreement: {
-        version: '1.0.0',
-        termsUrl: 'https://sequence.xyz/terms',
-        privacyUrl: 'https://sequence.xyz/privacy'
-      },
-      gettingStartedGuide: 'https://docs.sequence.xyz/',
-      explore: 'https://sequence.xyz'
-    },
     notify: {
       desktop: {
         enabled: true,
