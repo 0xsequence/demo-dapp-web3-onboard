@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 import Onboard from '@web3-onboard/core'
 import { Chain } from '@web3-onboard/common'
-import injectedModule from '@web3-onboard/injected-wallets'
 import sequenceModule from '@web3-onboard/sequence'
 
 import { ethers } from 'ethers'
