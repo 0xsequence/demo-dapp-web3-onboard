@@ -8,7 +8,6 @@ import sequenceModule from '@web3-onboard/sequence'
 import { ethers } from 'ethers'
 import { sequence } from '0xsequence'
 
-
 import { ERC_20_ABI } from './constants/abi'
 
 import { configureLogger } from '@0xsequence/utils'
@@ -25,15 +24,14 @@ const App = () => {
 
   const sequenceOnboard = sequenceModule()
 
-  const injected = injectedModule({
-    custom: [
-      // include custom injected wallet modules here
-    ],
-    filter: {
-      // mapping of wallet label to filter here
-    }
-  })
-
+  // const injected = injectedModule({
+  //   custom: [
+  //     // include custom injected wallet modules here
+  //   ],
+  //   filter: {
+  //     // mapping of wallet label to filter here
+  //   }
+  // })
 
   const onboard = Onboard({
     wallets: [
