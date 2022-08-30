@@ -267,11 +267,11 @@ And that has made all the difference.`
   return (
     <Container>
       <SequenceLogo alt="logo" src={logoUrl} />
-      <Title>Demo Dapp + Web3Modal</Title>
+      <Title>Demo Dapp + Web3 Onboard</Title>
       <Description>Please open your browser dev inspector to view output of functions below</Description>
 
       <Group label="Connection" layout="grid">
-        <Button onClick={() => connectWallet()}>Connect Web3Modal</Button>
+        <Button onClick={() => connectWallet()}>Connect Web3 Onboard</Button>
         <Button onClick={() => disconnectWallet()}>Disconnect</Button>
       </Group>
       <Group label="State" layout="grid">
