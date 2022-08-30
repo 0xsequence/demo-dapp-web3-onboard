@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/demo-dapp-web3-onboard/static/js/main.6bec5d45.js",
+    "main.js": "/demo-dapp-web3-onboard/static/js/main.c0b29512.js",
     "static/js/184.24f90155.chunk.js": "/demo-dapp-web3-onboard/static/js/184.24f90155.chunk.js",
     "static/js/26.7a3093d0.chunk.js": "/demo-dapp-web3-onboard/static/js/26.7a3093d0.chunk.js",
     "static/js/779.9191a772.chunk.js": "/demo-dapp-web3-onboard/static/js/779.9191a772.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/941.ac806eeb.chunk.js": "/demo-dapp-web3-onboard/static/js/941.ac806eeb.chunk.js",
     "static/media/logo.svg": "/demo-dapp-web3-onboard/static/media/logo.d7c9fc677fe69678a0a3dea6090ba6e9.svg",
     "index.html": "/demo-dapp-web3-onboard/index.html",
-    "main.6bec5d45.js.map": "/demo-dapp-web3-onboard/static/js/main.6bec5d45.js.map",
+    "main.c0b29512.js.map": "/demo-dapp-web3-onboard/static/js/main.c0b29512.js.map",
     "184.24f90155.chunk.js.map": "/demo-dapp-web3-onboard/static/js/184.24f90155.chunk.js.map",
     "26.7a3093d0.chunk.js.map": "/demo-dapp-web3-onboard/static/js/26.7a3093d0.chunk.js.map",
     "779.9191a772.chunk.js.map": "/demo-dapp-web3-onboard/static/js/779.9191a772.chunk.js.map",
@@ -23,6 +23,6 @@
     "941.ac806eeb.chunk.js.map": "/demo-dapp-web3-onboard/static/js/941.ac806eeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6bec5d45.js"
+    "static/js/main.c0b29512.js"
   ]
 }
