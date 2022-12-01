@@ -54,10 +54,7 @@ const App = () => {
 
   useEffect(() => {
     consoleWelcomeMessage()
-
-    setTimeout(() => {
-      connectWallet(true)
-    }, 1000)
+    connectWallet(true)
     // eslint-disable-next-line
   }, [])
 
