@@ -1,1 +1,0 @@
-(self.webpackChunkdemo_dapp_web3_onboard=self.webpackChunkdemo_dapp_web3_onboard||[]).push([[6563],{36563:function(){}}]);
