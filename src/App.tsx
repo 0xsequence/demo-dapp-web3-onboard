@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Onboard from '@web3-onboard/core'
 import { Chain } from '@web3-onboard/common'
 import injectedModule from '@web3-onboard/injected-wallets'
-import sequenceModule from '@web3-onboard/sequence'
+import sequenceModule from '@0xsequence/web3-onboard-plugin'
 import walletConnectModule from '@web3-onboard/walletconnect'
 
 import { ethers } from 'ethers'
