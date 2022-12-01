@@ -25,6 +25,13 @@ const App = () => {
   const [consoleMsg, setConsoleMsg] = useState<null|string>(null)
   const [consoleLoading, setConsoleLoading] = useState<boolean>(false)
 
+  // Note: 
+  useEffect(() => {
+    setTimeout(() => {
+      connectWallet(true)
+    }, 1000)
+  }, [])
+
   const appendConsoleLine = (message: string) => {
     return (setConsoleMsg((prevState => {
       return `${prevState}\n\n${message}`
@@ -122,8 +129,34 @@ const App = () => {
   })
 
   
-  const connectWallet = async () => {
-    const wallets = await onboard.connectWallet()
+  const connectWallet = async (isAutoConnect: boolean) => {
+    let wallets
+    if (isAutoConnect) {
+      try {
+        const instance = await sequence.initWallet('polygon');
+
+        if (!instance.isConnected()) {
+          return
+        }
+
+      } catch(e) {
+        console.log(e, 'Failed to initialize')
+        return
+      }
+
+      wallets = await onboard.connectWallet({
+        autoSelect: {
+          label: 'sequence',
+          disableModals: true
+        }
+      })
+      if (wallets.length === 0) {
+        onboard.disconnectWallet({ label: 'disconnectS' })
+      }
+    } else {
+      wallets = await onboard.connectWallet()
+    }
+
     const wallet = wallets[0]
     if (wallet) {
       const provider = new ethers.providers.Web3Provider(
@@ -373,7 +406,7 @@ const App = () => {
       <Description>Please open your browser dev inspector to view output of functions below</Description>
 
       <Group label="Connection" layout="grid">
-        <Button onClick={() => connectWallet()}>Connect Web3 Onboard</Button>
+        <Button onClick={() => connectWallet(false)}>Connect Web3 Onboard</Button>
         <Button onClick={() => disconnectWallet()}>Disconnect</Button>
       </Group>
       <Group label="State" layout="grid">
