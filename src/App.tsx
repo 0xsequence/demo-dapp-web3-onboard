@@ -58,6 +58,7 @@ const App = () => {
     setTimeout(() => {
       connectWallet(true)
     }, 1000)
+    // eslint-disable-next-line
   }, [])
 
   const sequenceOnboard = sequenceModule()
