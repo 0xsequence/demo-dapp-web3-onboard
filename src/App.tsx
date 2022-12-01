@@ -25,13 +25,6 @@ const App = () => {
   const [consoleMsg, setConsoleMsg] = useState<null|string>(null)
   const [consoleLoading, setConsoleLoading] = useState<boolean>(false)
 
-  // Note: 
-  useEffect(() => {
-    setTimeout(() => {
-      connectWallet(true)
-    }, 1000)
-  }, [])
-
   const appendConsoleLine = (message: string) => {
     return (setConsoleMsg((prevState => {
       return `${prevState}\n\n${message}`
@@ -61,6 +54,10 @@ const App = () => {
 
   useEffect(() => {
     consoleWelcomeMessage()
+
+    setTimeout(() => {
+      connectWallet(true)
+    }, 1000)
   }, [])
 
   const sequenceOnboard = sequenceModule()
