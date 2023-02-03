@@ -18,13 +18,15 @@
     "@0xsequence/ethauth": "0.8.1",
     "@radix-ui/colors": "^0.1.8",
     "@stitches/react": "^1.2.6",
+    "@0xsequence/design-system": "^0.1.107",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.22",
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vanilla-extract/css": "^1.9.3",
     "@web3-onboard/common": "^2.2.3",
     "@web3-onboard/core": "^2.10.1",
     "@web3-onboard/gas": "^2.1.4",
@@ -32,10 +34,11 @@
     "@0xsequence/web3-onboard-plugin": "^2.0.5",
     "@web3-onboard/walletconnect": "^2.2.0",
     "ethers": "^5.7.2",
+    "framer-motion": "^9.0.1",
     "node-polyfill-webpack-plugin": "^1.1.4",
-    "react": "^17.0.2",
+    "react": "^18.0.0",
     "react-app-rewired": "^2.1.11",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
@@ -57,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@vanilla-extract/webpack-plugin": "^2.2.0"
   }
 }
